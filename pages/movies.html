@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movies</title>
+  <link rel="stylesheet" href="../styles/card.css">
+  <link rel="stylesheet" href="../styles/select.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/movies/movies-top-section.css">
+  <link rel="stylesheet" href="../styles/movies/main.css">
+  <link rel="stylesheet" href="../styles/movies/movies-search.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Raleway" rel="stylesheet">
+  <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+  <div>
+
+    <div class="header">
+      <div id="header-sroll">
+        <h1>Illuba Movies</h1>
+        <div id="header-navs" class="header-nav-wrapper">
+          <a id="header-res-close-menu">x</a>
+          <a href="../index.html">Home</a>
+          <a href="movies.html">Search Movies</a>
+          <a href="about.html">About</a>
+        </div>
+        <p id="header-res-menu">=</p>
+      </div>
+    </div>
+
+    <div class="movies-top-section">
+      <a href="#movie-nowplaying-wrapper">Discover Movies</a>
+      <img src="../images/moviesbg.jpg" />
+    </div>
+
+    <div class="movies-search-options-wrapper">
+      <div class="search open" id="movie-search-wrapper">
+        <form id="movieSearchForm">
+          <input id="movieSearchInput" type="search" class="search-box" />
+        </form>
+        <span class="search-button">
+          <span class="search-icon"></span>
+        </span>
+      </div>
+
+      <div class="select">
+        <select name="slct" id="movies-search-option">
+          <option value="1">Movies</option>
+          <option value="4">Movie Stars</option>
+        </select>
+      </div>
+    </div>
+    <br/>
+
+    <div id="movie-searched-query" class="card-holder-wrapper movie-content-wrapper"></div>
+
+    <div class="movie-content-wrapper">
+      <br/>
+      <div id="movie-nowplaying-wrapper">
+        <h1 class="topic-header">Now In Theatres</h1>
+        <div id="movie-nowplaying-container" class="card-holder-wrapper"></div>
+      </div>
+
+      <br/>
+
+      <div>
+        <h1 class="topic-header">Upcoming Movies</h1>
+        <div id="movie-upcoming-container" class="card-holder-wrapper"></div>
+      </div>
+
+      <br/>
+
+    </div>
+
+    <div class="footer">
+      <p style="color: white">Copyright Illuba Company 2018</p>
+    </div>
+
+  </div>
+</body>
+
+<script src="../js/getMovies.js"></script>
+<script src="../js/movies/starCard.js"></script>
+<script src="../js/card.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/smoothScroll.js"></script>
+<script src="../js/movies/moviesSearch.js"></script>
+
+</html>

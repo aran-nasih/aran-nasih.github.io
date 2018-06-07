@@ -1,0 +1,191 @@
+.img_top{
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.img_top p{
+	position: absolute;
+	color: white;
+	font-size: 3em;	
+}
+.div_text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.info_about1{
+	text-align: center;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+.info_about2{
+	text-align:center;
+	font-size: 12px;
+	color: darkgray;
+}
+.box_img{
+	display: flex;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.next{
+	position: absolute;
+	cursor: pointer;
+    top: 45%;
+    width: auto;
+	right: 0%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.back{
+	position: absolute;
+	cursor: pointer;
+    top: 45%;
+    width: auto;
+	left: 0%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next:hover , .back:hover{
+	 background-color: rgba(0,0,0,0.8);
+}
+.sembol{
+	display: none;
+}
+.img_of_box{
+	width: 20%;
+	height: 150px;
+}
+.div_img_inventer img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+.all_data_inventer{
+	display: flex;
+	padding: 20px;
+}
+.all_data_inventer:hover{
+	box-shadow: 0px 0px 5px rgba(165,165,165,0.4);
+}
+.info_inventer{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.info_inventer h5{
+	margin: 5px;
+}
+.top_invenetr{
+	padding: 20px;
+}
+.top_invenetr h3{
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	height: 40px;
+/*
+	border-bottom: 1px solid black;
+*/
+}
+.info_inventer p{
+	font-size: 10px;
+	color: darkgray;
+	margin-left: 5px;
+}
+.name{
+	color: darkmagenta;
+	font-size: 16px;
+}
+.box_icon{
+	margin-left: 5px;
+}
+.wrap_invenetr{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+.all{
+	margin-left: 15%;
+}
+/*animation  rang kal bwnawaw hover */
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+.fade:hover{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@media only screen and (max-width : 720px){
+	.info_about1{
+	  text-align: center;
+	  font-size: 70%;
+	  font-family: sans-serif;
+    }
+	.info_about2{
+	  text-align:center;
+	  font-size: 50%;
+	  color: darkgray;
+   }
+	.img_of_box{
+	 width: 15%;
+	 height: 100px;
+   }
+	.top_invenetr h3{
+	 display: flex;
+	 justify-content: center;
+	 font-size: 15px;
+	 height: 40px;
+/*
+	border-bottom: 1px solid black;
+*/
+ } 
+  .wrap_invenetr{
+	display: flex;
+	 flex-direction: column;
+	justify-content: center;
+	 align-items: center;
+	margin-top: 30px;
+   }
+	.all_data_inventer{
+	display: flex;
+	padding: 10px;
+	width: 90%;;
+   }
+	.all{
+	  margin-left: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

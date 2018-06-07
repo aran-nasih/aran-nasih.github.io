@@ -1,0 +1,41 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: .9em;
+  margin:0px;
+  padding: 0px;
+  color: #29293a
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-holder-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.topic-header {
+  font-family: 'Raleway', sans-serif;
+  color: #981df0;
+  /* border-bottom: 1px solid  */
+}
+
+.m-r-3 {margin-right: 16px;}
+.m-r-4 {margin-right: 32px;}
+
+.m-l-3 {margin-left: 16px;}
+.m-l-4 {margin-left: 32px;}
+
+.m-t-4 {
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .res-fw {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100% !important;
+  }
+}

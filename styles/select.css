@@ -1,0 +1,55 @@
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #29293a;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 19.76%;
+  height: 100px;
+  line-height: 3;
+  background: #29293a;
+  overflow: hidden;
+  border-left: 2px solid #981df0
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 2em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #981df0;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #92923a;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
